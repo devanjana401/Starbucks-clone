@@ -1,63 +1,152 @@
 <DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks Coffee Company</title>
-    <link rel="icon" href="logo.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="main">
-        <div id="nav">
-            <div id="nav_part_1">
-                <img src = "logo.png">
-                <h3>Home</h3>
-                <h3>Gift</h3>
-                <h3>Order</h3>
-                <h3>Pay</h3>
-                <h3>Store</h3>
-            </div>
-            <div id="nav_part_2">
-                 <div class="search-box">
-                      <img src="search.png" class="search-icon">
-                      <input type="text" placeholder="looking for something specific?">
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Starbucks Coffee Company</title>
+        <link rel="icon" href="logo.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-secondary py-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Bootstrap" width="40" height="40" style="border-radius: 50%;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 custom-gap">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Gift</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Order</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Pay</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Store</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Corporate Gifting</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="search-box">
+                            <img src="search.png" class="search-icon">
+                            <input type="text" placeholder="Looking for something specific?">
+                        </div>
+                    </form>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="user.png" alt="User" width="30" height="30" style="border-radius: 50%;">
+                    </button>
                 </div>
-                <img src="user.png" class="user-icon">
             </div>
-        </div>
-        <div id="heading">
-            <h1>Starbucks Reward</h1>
+        </nav>
+        <div class="container-fluid heading">
+            <h1>Starbucks</h1>
             <button>Know More</button>
         </div>
-        <div id="content">
-            <div id="content_part_1">
-                 <h1>Handcrafted Curations</h1>
-                 <div id="part1_1">
-                   <div class="img1">
-                         <img src="Bestseller.jpg">
-                         <h5>Bestseller</h5>
+        <br><br>
+        <div id="carouselExampleAutoplaying" class="container carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="carousel1.png" class="d-block w-100" alt="...">
+                    <img src="carousela.png" alt="Overlay" class="carousel-overlay">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="caption">
+                            <p>Rewards Members</p>
+                            <h5>Exclusive Beverages!</h5>
+                            <p>Enjoy our two new beverages,Chocolate Foam Cold Brew & Jaggery Cloud Latte,exclusively
+                                for members!</p>
+                        </div>
                     </div>
-                    <div class="img1">
-                        <img src="Drinks.jpg">
-                        <h5>Drinks</h5>
-                    </div> 
-                    <div class="img1">
-                        <img src="Food.jpg">
-                        <h5>Food</h5>
-                    </div>  
-                    <div class="img1">
-                        <img src="Merchandise.jpg">
-                        <h5>Merchandise</h5>
-                    </div>  
-                    <div class="img1">
-                        <img src="CoffeeAtHome.jpg">
-                        <h5>CoffeeAtHome</h5>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="carousel2.jpeg" class="d-block w-100" alt="...">
+                    <img src="carouselb.png" alt="Overlay" class="carousel-overlay">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="caption">
+                            <p>New</p>
+                            <h5>It's Pumpkin Time!</h5>
+                            <p>THe global favourite you've been craving is finally here.Celebrate with the rich Pumpkin
+                                Spice Latte or the cool,creamy Pumpkin Spice Frappuccino.</p>
+                        </div>
                     </div>
-                    <div class="img1">
-                        <img src="ReadyToEat.jpg">
-                        <h5>ReadyToEat</h5>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="carousel3.png" class="d-block w-100" alt="...">
+                    <img src="carouselc.png" alt="Overlay" class="carousel-overlay">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="caption" style="color: black;">
+                            <p>New</p>
+                            <h5>Try the Blonde Roast!</h5>
+                            <p>Bright,sweet citrus notes and a smooth body makes this a classic.</p>
+                        </div>
                     </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="carousel4.png" class="d-block w-100" alt="...">
+                    <img src="carouseld.png" alt="Overlay" class="carousel-overlay">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="caption">
+                            <p>Starbucks</p>
+                            <h5>Beverage Subscription</h5>
+                            <p>Starbucks Subscription is Back!Sip Favourites for Less.Tap for Details.T&C Apply.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container  my-5">
+            <h3 class="mb-4 fw-bold">Handcrafted Curations</h3>
+            <div class="row justify-content-center text-center fw-bold">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img src="bestseller.jpg" class="img-fluid rounded-circle mb-2" alt="Bestseller">
+                    <p>Bestseller</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img src="drinks.jpg" class="img-fluid rounded-circle mb-2" alt="Drinks">
+                    <p>Drinks</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img src="food.jpg" class="img-fluid rounded-circle mb-2" alt="Food">
+                    <p>Food</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img src="Merchandise.jpg" class="img-fluid rounded-circle mb-2" alt="Merchandise">
+                    <p>Merchandise</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img src="CoffeeAtHome.jpg" class="img-fluid rounded-circle mb-2" alt="Coffee">
+                    <p>Coffee At Home</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img src="ReadyToEat.jpg" class="img-fluid rounded-circle mb-2" alt="Ready to Eat">
+                    <p>Ready to Eat</p>
+                </div>
             </div>
         </div>
         <div id="content2">
@@ -76,7 +165,8 @@
         <div id="content3">
             <h1>Learn more about the world of coffee!</h1>
             <div class="image-box">
-                <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/ICW_Live_Event_Day5_41f11ca3d2.jpg">
+                <img
+                    src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/ICW_Live_Event_Day5_41f11ca3d2.jpg">
                 <div class="learn-info">
                     <h2>Art & Science Of Coffee Brewing</h2>
                     <p>Master the perfect brew with Starbucks! Learn the art and science of coffee brewing</p>
@@ -84,67 +174,90 @@
                 </div>
             </div>
         </div>
-        <div id="last">
-            <div id="last1">
-                <img src = "logo.png">
-                <div id="last_content">
-                    <h2>About Us</h2>
-                    <h6>Our Heritage</h6>
-                    <h6>Coffeehouse</h6>
-                    <h6>Our Company</h6>
+        <br><br><br><br>
+        <footer class="footer">
+            <div class="container">
+                <a href="#">
+                        <img src="logo.png" alt="Bootstrap" width="40" height="40" style="border-radius: 50%;">
+                </a>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">Our Heritage</a></li>
+                            <li><a href="#">Coffeehouse</a></li>
+                            <li><a href="#">Our Company</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <h5>Responsibility</h5>
+                        <ul>
+                            <li><a href="#">Diversity</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Ethical Sourcing</a></li>
+                            <li><a href="#">Environmental Stewardship</a></li>
+                            <li><a href="#">Learn More</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Loyalty Program Terms and Conditions</a></li>
+                            <li><a href="#">Starbucks India Mobile App Terms of Use</a></li>
+                            <li><a href="#">Starbucks® Rewards Program</a></li>
+                            <li><a href="#">Free Tail Bev on Survey</a></li>
+                            <li><a href="#">Special 30% Off on Beverage</a></li>
+                            <li><a href="#">20% Off on Classic Combo Offer</a></li>
+                            <li><a href="#">Early Access Offer T&C</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">SR Exclusive Beverage</a></li>
+                            <li><a href="#">Buy any 2 Food Get 15% Off</a></li>
+                            <li><a href="#">Tues Club - 20% Off on Invoice T&C - Sep</a></li>
+                            <li><a href="#">Beverage Subscription</a></li>
+                            <li><a href="#">10% Off on Diwali Menu Offer T&C</a></li>
+                            <li><a href="#">Tues Club - 20% Off on Invoice</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="last_content">
-                    <h2>Responsibility</h2>
-                    <h6>Diversity</h6>
-                    <h6>Community</h6>
-                    <h6>Ethical Sourcing</h6>
-                    <h6>Environmental Stewardship</h6>
-                    <h6>Learn More</h6>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <h6 style="font-size: 30px;">Social Media</h6>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4 app-badges">
+                        <ul>
+                            <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png"
+                                alt="App Store"></li>
+                            <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png"
+                                alt="Google Play"></li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="last_content">
-                    <h2>Quick Links</h2>
-                    <h6>Privacy Policy</h6>
-                    <h6>FAQs</h6>
-                    <h6>Customer Service</h6>
-                    <h6>Delivery</h6>
-                    <h6>Loyalty Program Terms and Conditions</h6>
-                    <h6>Starbucks India Mobile App Terms of Use</h6>
-                    <h6>Special Discount 25% Off Offer</h6>
-                    <h6>Get 2x Bonus Stars</h6>
-                    <h6>Starbucks® Rewards Program</h6>
-                    <h6>Bevarage Subscription</h6>
-                </div>
-                <div id="last_content">
-                    <h2>Legal</h2>
-                    <h6>Disclaimer</h6>
+                <div class="row">
+                    <div class="col-12 text-center copyright">
+                        <p>© 2023 Starbucks Coffee Company. All rights reserved.</p>
+                        <p>Privacy Policy | Terms of Use | Cookie Preferences</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="last2">
-            <div id="last2_content">
-                <h2>SOCIAL MEDIA</h2>
-                    <img src="instagram.svg" >
-                    <img src="facebook.svg">
-                    <img src="twitter.svg">
-            </div>
-            <div id="last2_content2">
-                    <img src="appstoreiOS.png">
-                    <img src="appstoreAndroid.png">
-            </div>
-        </div>
-        <div id="last3">
-              <hr class="line">
-              <div id="last3_content">
-                <h3>Web Accessiblity</h3>
-                <h3>|</h3>
-                <h3>Privacy Statement</h3>
-                <h3>|</h3>
-                <h3>Terms of Use</h3>
-                <h3>|</h3>
-                <h3>Contact Us</h3>
-                <h6>©2025 Starbucks Coffee Company.All rights reserved.</h6>
-              </div>
-        </div>
-    </div>
-</body>
-</html>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </body>
+
+    </html>
